@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>SUPERPAINT II - cocreational experimental drawing tool</title>
+ 
+  <link rel="stylesheet" href="style.css">
+   
+ 
+</head>
+<body>
+  <div id="palette"></div>
+  
+  <div id="colorpick_div">
+  
+   <input type="color" id="colorPicker" value="#000000" />
+  </div>
+  
+
+  <div id="menu">
+    
+  
+    
+    
+<input type="file" id="fileInput" accept="image/*" style="display: none;">
+    
+    
+  </div>
+
+  <div id="alphaContainer">
+    <label id="alphaLabel" for="alphaSlider">ALPHA</label>
+    <input
+      id="alphaSlider"
+      type="range"
+      min="0"
+      max="1"
+      step="0.01"
+      value="1"
+    />
+ 
+  </div>
+  
+  
+  
+  
+  <div id="bsize_container">
+  
+   <label for="brushSize">SIZE</label>
+    <input type="range" id="brushSize" min="1" max="60" value="30" />
+   
+  
+  
+  </div>
+  
+  
+  <div id="importexportmenu">
+  
+  
+  
+   <button id="uploadBtn" >UPLOAD</button>
+   <button id="exportBtn" >EXPORT / JPG</button>
+  </div>
+  
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
+ <script src="script.js" defer></script>
+ 
+ 
+</body>
+</html>
